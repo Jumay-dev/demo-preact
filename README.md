@@ -4,6 +4,9 @@ npx preact-cli установит утилиту для преакта
 
 npx preact-cli create typescript my-project создаст проект под темплейт typescript
 
+npm install mobx-preact --save
+https://github.com/mobxjs/mobx-preact
+
 ## CLI Commands
 *   `npm install`: Installs dependencies
 
