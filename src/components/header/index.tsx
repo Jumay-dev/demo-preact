@@ -1,9 +1,9 @@
 import { FunctionalComponent, h } from 'preact';
-import { Link } from 'preact-router/match';
-import style from './style.css';
-import {observer} from "mobx-preact";
+import style from './style.scss';
+import { observer } from "mobx-preact";
+import { useEffect, useState } from "preact/hooks";
 
-const Header: FunctionalComponent = () => {
+export const Header: FunctionalComponent = observer(() => {
     return (
         <header class={style.header}>
             <h1>Preact App</h1>
@@ -17,6 +17,4 @@ const Header: FunctionalComponent = () => {
             </nav>
         </header>
     );
-};
-
-export default Header;
+});
